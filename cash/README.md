@@ -86,6 +86,8 @@ To use the cash module, apply the following steps : <br>
 3. Execute the installation of every needed packages : `npm i`
 4. You are ready to include this module to your own project
 
+# License
+
 
 
 
