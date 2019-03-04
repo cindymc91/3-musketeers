@@ -2,7 +2,7 @@
 
 > A simple module to help you convert amount of money, from one currency to another
 
-#Usage
+# Usage
 
 > How the module works : currency converter
 
@@ -34,8 +34,8 @@ Conversion of USD 10
 ```
 
 It is even possible to choose the currency you want with `node bin/index.js <amount> <from> <to>` : <br>
-(All the available currencies are given in `cash/lib/currencies.json`)
-`node bin/index.js 10 USD EUR` will convert 10 `USD` in `EUR`
+(All the available currencies are given in `cash/lib/currencies.json`) <br>
+`node bin/index.js 10 USD EUR` will convert 10 `USD` in `EUR` :
 
 ```
 ✔ 8.821 (EUR) Euro
@@ -43,13 +43,48 @@ It is even possible to choose the currency you want with `node bin/index.js <amo
 Conversion of USD 10
 ```
 
-`node bin/index.js 10 EUR CNY` will convert 10 `EUR` in `CNY` (Chinese Yuan)
+`node bin/index.js 10 EUR CNY` will convert 10 `EUR` in `CNY` (Chinese Yuan) :
 
 ```
 ✔ 75.985 (CNY) Chinese Yuan
 
 Conversion of EUR 10
 ```
+
+# API
+
+> Anyone can use this module, it includes itself very smoothly in your project
+
+To use the `cash` module, just add this line at the top of your project :
+
+```
+const cash = require('./cash.js');
+```
+
+Then, define a constant with the following information :
+- `amount`(int, float) - the amount of money you want to convert
+- `from` (string) - initial currency
+- `to` ([string]) - final currency
+
+```
+const command = {
+	amount: 10,
+	from: USD,
+	to: EUR
+};
+
+cash(command)
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
