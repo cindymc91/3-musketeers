@@ -73,8 +73,18 @@ const command = {
 	to: EUR
 };
 
-cash(command)
+cash(command);
 ```
+
+# Installation
+
+> Now let's get into it
+
+To use the cash module, apply the following steps : <br>
+1. Fork the project from Github `https://github.com/cindymc91/3-musketeers.git`
+2. Go to the location of your project and to the module `cd yourpath/3-musketeers/cash`
+3. Execute the installation of every needed packages : `npm i`
+4. You are ready to include this module to your own project
 
 
 
