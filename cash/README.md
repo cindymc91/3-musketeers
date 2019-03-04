@@ -1,4 +1,4 @@
-# cash
+# Cash
 
 > A simple module to help you convert amount of money, from one currency to another
 
@@ -57,7 +57,7 @@ Conversion of EUR 10
 
 To use the `cash` module, just add this line at the top of your project :
 
-```
+```js
 const cash = require('./cash.js');
 ```
 
@@ -66,7 +66,7 @@ Then, define a constant with the following information :
 - `from` (string) - initial currency
 - `to` ([string]) - final currency
 
-```
+```js
 const command = {
 	amount: 10,
 	from: USD,
